@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55267ABB20A04C48002EAF52 /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55267AB820A04C47002EAF52 /* AipBase.framework */; };
+		55267ABC20A04C48002EAF52 /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55267AB820A04C47002EAF52 /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55267ABD20A04C48002EAF52 /* AipOcrSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55267AB920A04C47002EAF52 /* AipOcrSdk.framework */; };
+		55267ABE20A04C48002EAF52 /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55267AB920A04C47002EAF52 /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55267ABF20A04C48002EAF52 /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55267ABA20A04C48002EAF52 /* IdcardQuality.framework */; };
+		55267AC020A04C48002EAF52 /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55267ABA20A04C48002EAF52 /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5540F23B209EE17000B404DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F23A209EE17000B404DB /* AppDelegate.m */; };
-		5540F23E209EE17100B404DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F23D209EE17100B404DB /* ViewController.m */; };
 		5540F241209EE17100B404DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5540F23F209EE17100B404DB /* Main.storyboard */; };
 		5540F243209EE17200B404DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5540F242209EE17200B404DB /* Assets.xcassets */; };
 		5540F246209EE17200B404DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5540F244209EE17200B404DB /* LaunchScreen.storyboard */; };
 		5540F249209EE17200B404DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F248209EE17200B404DB /* main.m */; };
 		5540F253209EE17200B404DB /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F252209EE17200B404DB /* DemoTests.m */; };
 		5540F25E209EE17200B404DB /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F25D209EE17200B404DB /* DemoUITests.m */; };
+		5540F26D209EE4B400B404DB /* PhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F26C209EE4B400B404DB /* PhotosCollectionViewController.m */; };
+		5540F270209EE4D300B404DB /* RecordsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F26F209EE4D300B404DB /* RecordsTableViewController.m */; };
+		5540F283209EE7DB00B404DB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5540F282209EE7DB00B404DB /* libsqlite3.tbd */; };
+		5540F28E209EEA2800B404DB /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F28D209EEA2800B404DB /* CollectionViewCell.m */; };
+		5540F291209EEA6600B404DB /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F290209EEA6600B404DB /* TableViewCell.m */; };
+		5540F295209EF80B00B404DB /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F294209EF80B00B404DB /* Item.m */; };
+		5540F29D209EFABA00B404DB /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F29C209EFABA00B404DB /* DAO.m */; };
+		5540F2A7209F01C900B404DB /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F2A5209F01C900B404DB /* PreviewViewController.m */; };
+		5540F2A8209F01C900B404DB /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5540F2A6209F01C900B404DB /* PreviewViewController.xib */; };
+		5540F2AD209F038F00B404DB /* FullTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F2AB209F038F00B404DB /* FullTextViewController.m */; };
+		5540F2AE209F038F00B404DB /* FullTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5540F2AC209F038F00B404DB /* FullTextViewController.xib */; };
+		5540F2B8209F1C9200B404DB /* ConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5540F2B6209F1C9200B404DB /* ConfirmViewController.m */; };
+		5540F2B9209F1C9200B404DB /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5540F2B7209F1C9200B404DB /* ConfirmViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +52,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		55267AB720A04B05002EAF52 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55267ABC20A04C48002EAF52 /* AipBase.framework in Embed Frameworks */,
+				55267ABE20A04C48002EAF52 /* AipOcrSdk.framework in Embed Frameworks */,
+				55267AC020A04C48002EAF52 /* IdcardQuality.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		55267AB820A04C47002EAF52 /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipBase.framework; sourceTree = "<group>"; };
+		55267AB920A04C47002EAF52 /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AipOcrSdk.framework; sourceTree = "<group>"; };
+		55267ABA20A04C48002EAF52 /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IdcardQuality.framework; sourceTree = "<group>"; };
 		5540F236209EE17000B404DB /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5540F239209EE17000B404DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5540F23A209EE17000B404DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5540F23C209EE17100B404DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5540F23D209EE17100B404DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5540F240209EE17100B404DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5540F242209EE17200B404DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5540F245209EE17200B404DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +86,28 @@
 		5540F259209EE17200B404DB /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5540F25D209EE17200B404DB /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		5540F25F209EE17200B404DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5540F26B209EE4B400B404DB /* PhotosCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosCollectionViewController.h; sourceTree = "<group>"; };
+		5540F26C209EE4B400B404DB /* PhotosCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosCollectionViewController.m; sourceTree = "<group>"; };
+		5540F26E209EE4D300B404DB /* RecordsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordsTableViewController.h; sourceTree = "<group>"; };
+		5540F26F209EE4D300B404DB /* RecordsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordsTableViewController.m; sourceTree = "<group>"; };
+		5540F282209EE7DB00B404DB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5540F28C209EEA2800B404DB /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		5540F28D209EEA2800B404DB /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		5540F28F209EEA6600B404DB /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		5540F290209EEA6600B404DB /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		5540F293209EF80B00B404DB /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		5540F294209EF80B00B404DB /* Item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		5540F29B209EFABA00B404DB /* DAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAO.h; sourceTree = "<group>"; };
+		5540F29C209EFABA00B404DB /* DAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAO.m; sourceTree = "<group>"; };
+		5540F2A4209F01C900B404DB /* PreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		5540F2A5209F01C900B404DB /* PreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		5540F2A6209F01C900B404DB /* PreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
+		5540F2AA209F038F00B404DB /* FullTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullTextViewController.h; sourceTree = "<group>"; };
+		5540F2AB209F038F00B404DB /* FullTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FullTextViewController.m; sourceTree = "<group>"; };
+		5540F2AC209F038F00B404DB /* FullTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullTextViewController.xib; sourceTree = "<group>"; };
+		5540F2B5209F1C9200B404DB /* ConfirmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfirmViewController.h; sourceTree = "<group>"; };
+		5540F2B6209F1C9200B404DB /* ConfirmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfirmViewController.m; sourceTree = "<group>"; };
+		5540F2B7209F1C9200B404DB /* ConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +115,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55267ABB20A04C48002EAF52 /* AipBase.framework in Frameworks */,
+				5540F283209EE7DB00B404DB /* libsqlite3.tbd in Frameworks */,
+				55267ABD20A04C48002EAF52 /* AipOcrSdk.framework in Frameworks */,
+				55267ABF20A04C48002EAF52 /* IdcardQuality.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +142,14 @@
 		5540F22D209EE17000B404DB = {
 			isa = PBXGroup;
 			children = (
+				55267AB820A04C47002EAF52 /* AipBase.framework */,
+				55267AB920A04C47002EAF52 /* AipOcrSdk.framework */,
+				55267ABA20A04C48002EAF52 /* IdcardQuality.framework */,
 				5540F238209EE17000B404DB /* Demo */,
 				5540F251209EE17200B404DB /* DemoTests */,
 				5540F25C209EE17200B404DB /* DemoUITests */,
 				5540F237209EE17000B404DB /* Products */,
+				5540F281209EE7DA00B404DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +166,12 @@
 		5540F238209EE17000B404DB /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				5540F29A209EFA9800B404DB /* DAO */,
+				5540F292209EF7F200B404DB /* model */,
+				5540F272209EE73600B404DB /* records */,
+				5540F271209EE72700B404DB /* photos */,
 				5540F239209EE17000B404DB /* AppDelegate.h */,
 				5540F23A209EE17000B404DB /* AppDelegate.m */,
-				5540F23C209EE17100B404DB /* ViewController.h */,
-				5540F23D209EE17100B404DB /* ViewController.m */,
 				5540F23F209EE17100B404DB /* Main.storyboard */,
 				5540F242209EE17200B404DB /* Assets.xcassets */,
 				5540F244209EE17200B404DB /* LaunchScreen.storyboard */,
@@ -132,6 +199,103 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
+		5540F271209EE72700B404DB /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				5540F2AF209F179F00B404DB /* preview */,
+				5540F288209EE82F00B404DB /* cell */,
+				5540F26B209EE4B400B404DB /* PhotosCollectionViewController.h */,
+				5540F26C209EE4B400B404DB /* PhotosCollectionViewController.m */,
+			);
+			path = photos;
+			sourceTree = "<group>";
+		};
+		5540F272209EE73600B404DB /* records */ = {
+			isa = PBXGroup;
+			children = (
+				5540F2A9209F037200B404DB /* fullText */,
+				5540F2A3209F013E00B404DB /* preview */,
+				5540F284209EE81000B404DB /* cell */,
+				5540F26E209EE4D300B404DB /* RecordsTableViewController.h */,
+				5540F26F209EE4D300B404DB /* RecordsTableViewController.m */,
+			);
+			path = records;
+			sourceTree = "<group>";
+		};
+		5540F281209EE7DA00B404DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5540F282209EE7DB00B404DB /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5540F284209EE81000B404DB /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				5540F28F209EEA6600B404DB /* TableViewCell.h */,
+				5540F290209EEA6600B404DB /* TableViewCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		5540F288209EE82F00B404DB /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				5540F28C209EEA2800B404DB /* CollectionViewCell.h */,
+				5540F28D209EEA2800B404DB /* CollectionViewCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		5540F292209EF7F200B404DB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5540F293209EF80B00B404DB /* Item.h */,
+				5540F294209EF80B00B404DB /* Item.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5540F29A209EFA9800B404DB /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				5540F29B209EFABA00B404DB /* DAO.h */,
+				5540F29C209EFABA00B404DB /* DAO.m */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		5540F2A3209F013E00B404DB /* preview */ = {
+			isa = PBXGroup;
+			children = (
+				5540F2A4209F01C900B404DB /* PreviewViewController.h */,
+				5540F2A5209F01C900B404DB /* PreviewViewController.m */,
+				5540F2A6209F01C900B404DB /* PreviewViewController.xib */,
+			);
+			path = preview;
+			sourceTree = "<group>";
+		};
+		5540F2A9209F037200B404DB /* fullText */ = {
+			isa = PBXGroup;
+			children = (
+				5540F2AA209F038F00B404DB /* FullTextViewController.h */,
+				5540F2AB209F038F00B404DB /* FullTextViewController.m */,
+				5540F2AC209F038F00B404DB /* FullTextViewController.xib */,
+			);
+			path = fullText;
+			sourceTree = "<group>";
+		};
+		5540F2AF209F179F00B404DB /* preview */ = {
+			isa = PBXGroup;
+			children = (
+				5540F2B5209F1C9200B404DB /* ConfirmViewController.h */,
+				5540F2B6209F1C9200B404DB /* ConfirmViewController.m */,
+				5540F2B7209F1C9200B404DB /* ConfirmViewController.xib */,
+			);
+			path = preview;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +306,7 @@
 				5540F232209EE17000B404DB /* Sources */,
 				5540F233209EE17000B404DB /* Frameworks */,
 				5540F234209EE17000B404DB /* Resources */,
+				55267AB720A04B05002EAF52 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,9 +400,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5540F2AE209F038F00B404DB /* FullTextViewController.xib in Resources */,
 				5540F246209EE17200B404DB /* LaunchScreen.storyboard in Resources */,
 				5540F243209EE17200B404DB /* Assets.xcassets in Resources */,
 				5540F241209EE17100B404DB /* Main.storyboard in Resources */,
+				5540F2A8209F01C900B404DB /* PreviewViewController.xib in Resources */,
+				5540F2B9209F1C9200B404DB /* ConfirmViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +430,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5540F23E209EE17100B404DB /* ViewController.m in Sources */,
+				5540F2B8209F1C9200B404DB /* ConfirmViewController.m in Sources */,
+				5540F295209EF80B00B404DB /* Item.m in Sources */,
+				5540F291209EEA6600B404DB /* TableViewCell.m in Sources */,
+				5540F28E209EEA2800B404DB /* CollectionViewCell.m in Sources */,
+				5540F270209EE4D300B404DB /* RecordsTableViewController.m in Sources */,
+				5540F29D209EFABA00B404DB /* DAO.m in Sources */,
+				5540F2A7209F01C900B404DB /* PreviewViewController.m in Sources */,
 				5540F249209EE17200B404DB /* main.m in Sources */,
+				5540F26D209EE4B400B404DB /* PhotosCollectionViewController.m in Sources */,
+				5540F2AD209F038F00B404DB /* FullTextViewController.m in Sources */,
 				5540F23B209EE17000B404DB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,13 +610,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HF4RL3535R;
+				DEVELOPMENT_TEAM = XMNQE9TN29;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hxy.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = hxy.TabTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,13 +631,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HF4RL3535R;
+				DEVELOPMENT_TEAM = XMNQE9TN29;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hxy.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = hxy.TabTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
