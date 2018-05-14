@@ -98,7 +98,7 @@ static NSString * const reuseIdentifier = @"TableCellIdentifier";
     return 75;
 }
 
-#pragma mark UITableViewEditing
+#pragma mark - UITableViewEditing
 //先要设Cell可编辑
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
@@ -126,7 +126,7 @@ static NSString * const reuseIdentifier = @"TableCellIdentifier";
 }
 
 
-#pragma mark clear
+#pragma mark - clear
 - (IBAction)clear:(id)sender {
     if ([_list count] > 0) {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle: @""

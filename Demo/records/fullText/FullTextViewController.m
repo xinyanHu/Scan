@@ -29,7 +29,6 @@
 // 在视图要消失前，更新RECORD
 
 - (void)viewWillDisappear:(BOOL)animated {
-    
     [super viewWillDisappear:animated];
     
     DAO *dao = [DAO new];
@@ -52,7 +51,7 @@
     [_textView setInputAccessoryView:topView];
 }
 
-//收起键盘，更新数据库
+//收起键盘
 -(IBAction)dismissKeyBoard {
     [_textView resignFirstResponder];
 }

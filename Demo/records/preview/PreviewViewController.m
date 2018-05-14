@@ -26,7 +26,6 @@
     
     [self addGestureRecognizerToView:_imageView];
     
-    //如果处理的是图片，别忘了
     [_imageView setUserInteractionEnabled:YES];
     [_imageView setMultipleTouchEnabled:YES];
 
@@ -70,6 +69,11 @@
     }
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    currentScale = 0.0f;
+    self.imageView.transform = CGAffineTransformMakeScale(0, 0);
+}
 /*
 #pragma mark - Navigation
 

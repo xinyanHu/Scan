@@ -33,7 +33,6 @@ static NSString * const reuseIdentifier = @"CollectionCellIdentifier";
     [super viewDidLoad];
     _assets = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options: nil];
     
-    
     [[AipOcrService shardService] authWithAK:@"rUANGL00GQ0i7cnGSnLuMGSl" andSK:@"kWhpsG0jK8qQpe5roTuwz06ZiTHHsITN"];
     [self configCallback];
 
@@ -47,7 +46,7 @@ static NSString * const reuseIdentifier = @"CollectionCellIdentifier";
 #pragma mark - camera
 - (IBAction)camera:(id)sender {
     UIViewController * vc = [AipGeneralVC ViewControllerWithHandler:^(UIImage *image) {
-        // 在这个block里，image即为切好的图片，可自行选择如何处理
+        // 在这个block里，image即为切好的图片
         self->_result = image;
         NSDictionary *options = @{@"language_type": @"CHN_ENG", @"detect_direction": @"true"};
         [[AipOcrService shardService] detectTextFromImage:image
@@ -178,7 +177,4 @@ static NSString * const reuseIdentifier = @"CollectionCellIdentifier";
     [self.navigationController pushViewController:vc animated:YES];
     self.hidesBottomBarWhenPushed = NO;
 }
-
-
-
 @end
